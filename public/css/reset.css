@@ -1,0 +1,61 @@
+/* 1.初始化 */
+*{
+    padding: 0;
+    margin: 0;
+    /*设置盒模型*/
+    box-sizing: border-box;
+    /*去除移动端特有的点击高亮效果*/
+    -webkit-tap-highlight-color: transparent;
+}
+:root {
+    background-color: #eee;
+}
+html{
+    font-size: 20px;
+}
+body{
+    font-family: "黑体","Arial","宋体","楷体","Microsoft YaHei",sans-serif;
+    font-size: 0.46rem;
+} 
+a,a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+input{
+    /*1.清除文本框获取焦点时默认的边框阴影*/
+    outline: none;
+    /*2.去除边框*/
+    border: none;
+}
+/* button{
+    border-style: none;
+} */
+
+/* 2.添加新样式 */
+
+.fl{
+    float: left;
+}
+
+.fr{
+    float: right;
+}
+
+.clearfix:after{/*伪元素是行内元素 正常浏览器清除浮动方法*/
+    content: "";
+    display: block;
+    height: 0;
+    clear:both;
+    visibility: hidden;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
